@@ -112,9 +112,47 @@ body {
 
 .nav {
     justify-content: space-between;
-    
+
 }
 
 .nav>* {
     padding: 20px;
+}
+
+.playlist {
+    font-family: 'Roboto';
+    border: 2px solid red;
+    color: #fff;
+}
+
+.cardimg {
+    width: 200px;
+}
+.cardcontainer{
+    padding: 10px;
+}
+.card {
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    background-color: #181818;
+    padding: 20px;
+    color: #fff;
+    
+}
+
+.card p {
+    color: #b3b3b3;
+}
+
+.cardimg img {
+    border-radius: 14px;
+    width: 100%;
+    object-fit: contain;
+}
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
