@@ -7,18 +7,42 @@
 }
 
 body {
-    color: black;
+    color: rgb(235, 14, 14);
 }
 
 .left {
     padding: 10px;
     width: 25vw;
+    height: 97vh;
 }
 
 .right {
+    overflow-y: hidden;
+    overflow-x: hidden;
     width: 75vw;
     margin-top: 15px;
     margin-right: 15px;
+    height: 96vh;
+    position: relative;
+}
+
+.playbar {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(58, 80, 83);
+    width: 100%;
+    padding: 6px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playbuttons {
+    color: aqua;
+    width: 20px;
+    height: 20px;
+
 }
 
 .library {
@@ -120,18 +144,24 @@ body {
 }
 
 .playlist {
+    margin-left: 12px;
+    padding: 7px;
     font-family: 'Roboto';
-    border: 2px solid red;
     color: #fff;
 }
 
 .cardimg {
     width: 200px;
 }
-.cardcontainer{
+
+.cardcontainer {
     padding: 10px;
+    overflow-y: scroll;
+    max-height: 60vh;
 }
+
 .card {
+    position: relative;
     border-radius: 20%;
     display: flex;
     flex-direction: column;
@@ -139,7 +169,8 @@ body {
     background-color: #181818;
     padding: 20px;
     color: #fff;
-    
+    height: 240px;
+
 }
 
 .card p {
@@ -151,8 +182,91 @@ body {
     width: 100%;
     object-fit: contain;
 }
-.cardcontainer{
+
+#subtext {
+    position: absolute;
+    bottom: 5px;
+}
+
+.cardcontainer {
+    margin-left: 15px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 10px;
+}
+
+.play {
+    position: absolute;
+    top: 162px;
+    right: 25px;
+    z-index: 1;
+}
+
+.footer {
+    padding: 10px;
+}
+
+.play img {
+    width: 46px;
+}
+
+button {
+    /* Resetting all styles */
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    /* Additional reset for older browsers */
+
+}
+
+.buttons {
+    gap: 16px;
+
+}
+
+.login {
+    cursor: pointer;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 21px;
+    color: #181818;
+}
+
+.signup {
+    margin: 5px;
+    color: #A7A7A7;
+    font-weight: 700;
+}
+
+.raro {
+    display: flex;
+    align-items: center;
+}
+.songbuttons{
+   padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.laro {
+    display: flex;
+    align-items: center;
+}
+.songbuttons img{
+    width: 54px;
+}
+.songbuttons img:nth-of-type(1){
+    width: 34px;
+}
+.songbuttons img:nth-of-type(3){
+    width: 34px;
 }

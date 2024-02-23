@@ -38,3 +38,38 @@
 .p_1 {
     padding: 18px;
 }
+
+
+/* Styles for Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2d2d2d; /* Dark background color for thumb */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Dark background color for thumb on hover */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1a1a1a; /* Dark background color for track */
+}
+
+/* Styles for Firefox */
+/* Note: Firefox currently does not support styling the scrollbar thumb separately */
+/* The following styles will affect both thumb and track */
+/* For better results in Firefox, you can consider using a library like SimpleBar */
+
+/* Styles for Edge and IE */
+/* Note: Edge and IE do not support styling the scrollbar thumb and track separately */
+/* The following styles will affect both thumb and track */
+/* For better results, consider using a library like SimpleBar */
+
+/* General scrollbar styles */
+
+.drk{
+    background-color: #202020;
+}
